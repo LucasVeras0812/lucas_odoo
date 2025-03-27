@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id="donuts_task_list" model="ir.ui.view">
         <field name="name">donuts_list_view</field>
-        <field name="model">donuts.task</field>
+        <field name="model">task.donuts</field> <!-- Corrigido para task.donuts -->
         <field name="arch" type="xml">
             <list string="Teste LIST DONUTS">
                 <field name="product_name"/>
@@ -14,7 +13,7 @@
 
     <record id="donuts_task_form" model="ir.ui.view">
         <field name="name">donuts_form_view</field>
-        <field name="model">donuts.task</field>
+        <field name="model">task.donuts</field> <!-- Corrigido para task.donuts -->
         <field name="arch" type="xml">
             <form string="Teste FORM DONUTS">
                 <sheet>
@@ -26,5 +25,4 @@
             </form>
         </field>
     </record>
-
 </odoo>

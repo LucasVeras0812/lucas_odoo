@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+
+donuts_task_user,Donuts User,model_task_donuts,group_task_donuts_user,1,0,0,0
+donuts_task_manager,Donuts Manager,model_task_donuts,group_task_donuts_manager,1,1,0,0
+donuts_task_admin,Donuts Admin,model_task_donuts,group_task_donuts_admin,1,1,1,1

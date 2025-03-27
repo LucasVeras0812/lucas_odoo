@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_task_donuts_user" model="res.groups">
+            <field name="name">Donuts User</field>
+        </record>
+
+        <record id="group_task_donuts_manager" model="res.groups">
+            <field name="name">Donuts Manager</field>
+        </record>
+
+        <record id="group_task_donuts_admin" model="res.groups">
+            <field name="name">Donuts Admin</field>
+        </record>
+    </data>
+</odoo>
