@@ -34,6 +34,11 @@ class TaskDonuts(models.Model):
         string='Price of Donut',
         required=True,
     )
+    image = fields.Binary(
+        string='',
+        attachment=True,  # Salva a imagem como um anexo
+    )
+
     @api.constrains('price_product', 'type_donuts')
     def _check_price_product(self):
         for record in self:
@@ -46,7 +51,7 @@ class TaskDonuts(models.Model):
             # verifica se o preço é menor que o mínimo configurado para o tipo de donuts selecionado
             if record.price_product < min_prices.get(record.type_donuts, 0):
                 raise ValidationError(
-                    f'O preço para um donut do tipo "{record.type_donuts.capitalize()}" '
+                    f'O preço para um donuts do tipo "{record.type_donuts.capitalize()}" '
                     f'não pode ser menor que {min_prices[record.type_donuts]:.2f}!'
                 )
 

@@ -19,8 +19,23 @@
         <field name="arch" type="xml">
             <form string="Type form">
                 <sheet>
-                    <group string="Product Registration">
-                        <field name="product_name"/>
+                    <group string="Product Registration" colspan="2">
+                        <!-- Flexbox para alinhar o campo e a imagem lado a lado -->
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <label for="product_name">Product Name</label>
+                            <field name="product_name" style="flex: 1;"/>
+                            <div style="
+                                height: 128px;
+                                width: 128px;
+                                border: 1px solid #ccc;
+                                overflow: hidden;
+                                margin-left: auto;
+                            ">
+                                <field name="image" widget="image" style="height: 100%; width: 100%; object-fit: cover;"/>
+                            </div>
+                        </div>
+                    </group>
+                    <group>
                         <field name="type_donuts"/>
                         <field name="flavor"/>
                         <field name="type_coverage"/>
