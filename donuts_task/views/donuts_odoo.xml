@@ -4,9 +4,11 @@
         <field name="name">donuts_list_view</field>
         <field name="model">task.donuts</field>
         <field name="arch" type="xml">
-            <list string="Teste LIST DONUTS">
+            <list string="Type list">
                 <field name="product_name"/>
-                <field name="product_description"/>
+                <field name="type_donuts"/>
+                <field name="flavor"/>
+                <field name="price_product"/>
             </list>
         </field>
     </record>
@@ -15,11 +17,14 @@
         <field name="name">donuts_form_view</field>
         <field name="model">task.donuts</field>
         <field name="arch" type="xml">
-            <form string="Teste FORM DONUTS">
+            <form string="Type form">
                 <sheet>
-                    <group string="Form donut shop">
+                    <group string="Product Registration">
                         <field name="product_name"/>
-                        <field name="product_description"/>
+                        <field name="type_donuts"/>
+                        <field name="flavor"/>
+                        <field name="type_coverage"/>
+                        <field name="price_product"/>
                     </group>
                 </sheet>
             </form>

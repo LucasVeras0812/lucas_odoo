@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <record id="module_category_task_donuts" model="ir.module.category">
+            <field name="name">Donuts Groups</field>
+            <field name="sequence">3</field>
+        </record>
+
         <record id="group_task_donuts_user" model="res.groups">
             <field name="name">Donuts User</field>
+            <field name="category_id" ref="module_category_task_donuts"/>
         </record>
 
         <record id="group_task_donuts_manager" model="res.groups">
             <field name="name">Donuts Manager</field>
+            <field name="category_id" ref="module_category_task_donuts"/>
         </record>
 
         <record id="group_task_donuts_admin" model="res.groups">
             <field name="name">Donuts Admin</field>
+            <field name="category_id" ref="module_category_task_donuts"/>
         </record>
     </data>
 </odoo>

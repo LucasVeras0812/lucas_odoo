@@ -10,14 +10,14 @@
     <field name="res_model">task.donuts</field>
     <field name="view_mode">list,form</field>
     <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">Your first donut shop
+            <p class="o_view_nocontent_smiling_face">Your first product registration
             </p>
         </field>
 </record>
 
 <menuitem
     id="menu_donuts_main"
-    name="Settings"
+    name="Product Registration"
     parent="menu_donuts_root"
     action="donutsodoo_action"/>
 
